@@ -56,6 +56,13 @@ class MusicLibraryController
     end
   end 
   
+  
+      # expect($stdout).to receive(:puts).with("1. Action Bronson")
+      # expect($stdout).to receive(:puts).with("2. Jurassic 5")
+      # expect($stdout).to receive(:puts).with("3. Real Estate")
+      # expect($stdout).to receive(:puts).with("4. Thundercat")
+      
+      
   def list_genres
     
   end
