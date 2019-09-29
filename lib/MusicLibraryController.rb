@@ -51,10 +51,10 @@ class MusicLibraryController
   end 
   
   def list_artists
-    if @input = "list artists"
+    
       artist_list = Artist.all.sort_by {|artist| artist.name}
-      artist_list.each.with_index(1)
-    end
+      artist_list.each.with_index(1) {|artist, i| puts "#{artist.name}"
+    
   end 
   
   
