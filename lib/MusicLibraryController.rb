@@ -34,7 +34,7 @@ class MusicLibraryController
     
     def list_songs
       if @input = "list songs"
-        Song.all
+        Song.all.each {|song| puts song.name}
       end 
     end 
     
