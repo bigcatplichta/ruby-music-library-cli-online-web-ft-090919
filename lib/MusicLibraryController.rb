@@ -94,8 +94,11 @@ class MusicLibraryController
     
     if selection.between?(0, (list.count))
       binding.pry
-     puts "Playing #{list[input.to_i].name} by #{list[input.to_i].artist.name}" 
-    end 
+      song = Song.all.sort{ |a, b| a.name <=> b.name }[input - 1]
+    end
+    
+     # puts "Playing #{list[input.to_i].name} by #{list[input.to_i].artist.name}" 
+     
     
   end 
 end
