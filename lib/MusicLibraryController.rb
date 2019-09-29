@@ -21,10 +21,6 @@ class MusicLibraryController
     "To play a song, enter 'play song'."
     "To quit, type 'exit'."
     
-    
-    
-    
-      
       case @input 
       when "list songs"
         list_songs 
