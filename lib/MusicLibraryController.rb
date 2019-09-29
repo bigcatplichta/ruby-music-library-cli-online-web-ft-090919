@@ -73,8 +73,8 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     input = gets.chomp 
     
-    artist = Artist.all.find { |x| x.name == input }
-    artist.songs 
+    # artist = Artist.all.find { |x| x.name == input }
+    # artist.songs 
   end 
   
   # it "prompts the user to enter an artist" do
