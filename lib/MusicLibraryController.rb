@@ -88,7 +88,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     list = Song.all
-    input = gets.chomp
+    input = gets.chomp.to_i
     
     if input.between?(1, (list.count))
       binding.pry
