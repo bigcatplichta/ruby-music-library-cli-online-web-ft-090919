@@ -44,7 +44,7 @@ class MusicLibraryController
     
     
   def list_songs
-      Song.all.each.with_index(1) {|song, i|}
+      Song.all.each.with_index(1) {|song, i|  binding.pry}
       
       binding.pry
   end 
