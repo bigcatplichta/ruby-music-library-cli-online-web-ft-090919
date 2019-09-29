@@ -72,6 +72,10 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     input = gets.chomp 
     binding.pry
+    if input = #artist
+      #artist.songs
+    else 
+      puts ""
   end 
   
   # it "prompts the user to enter an artist" do
