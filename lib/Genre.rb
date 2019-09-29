@@ -1,3 +1,5 @@
+require_relative 'concerns.rb'
+
 class Genre
 
 extend Concerns::Findable
