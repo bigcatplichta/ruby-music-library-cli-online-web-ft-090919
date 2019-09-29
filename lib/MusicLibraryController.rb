@@ -93,7 +93,7 @@ class MusicLibraryController
     
     binding.pry
     
-    puts"Playing #{list[selection].song.name} by #{list[selection].artist.name}" 
+    puts"Playing #{list[selection].name} by #{list[selection].artist.name}" 
     
     binding.pry
     
