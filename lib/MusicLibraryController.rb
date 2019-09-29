@@ -19,14 +19,16 @@ class MusicLibraryController
     "To play a song, enter 'play song'."
     "To quit, type 'exit'."
     "What would you like to do?"
-    when @input = "list songs"
+      
+      case @input 
+      when "list songs"
+        list_songs 
+      when 
     
     end 
     
     def list_songs
-      
         Song.all.each {|song| puts song.name}
-      end 
     end 
     
     def list_artists
