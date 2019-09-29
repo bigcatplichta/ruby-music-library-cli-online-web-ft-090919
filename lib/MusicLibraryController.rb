@@ -91,7 +91,7 @@ class MusicLibraryController
     input = gets.chomp
     selection = input.to_i-1
     
-    
+    list[selection].artist.name 
     
     binding.pry
     
