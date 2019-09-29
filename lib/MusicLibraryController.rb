@@ -95,7 +95,7 @@ class MusicLibraryController
      
     
     
-    puts"Playing #{list[selection].name} by #{list[selection].artist.name}" 
+    #puts "Playing #{list[selection].name} by #{list[selection].artist.name}" 
     
     
     
