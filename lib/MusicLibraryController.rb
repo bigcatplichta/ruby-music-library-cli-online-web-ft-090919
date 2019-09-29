@@ -49,8 +49,15 @@ class MusicLibraryController
       
       
      
-      song_list.each.with_index(1) {|song, i| puts "#{i}. #{artist.name}" binding.pry}
+      song_list.each.with_index(1) {|song, i| puts "#{i}. #{artist.name} - #{song.name} - #{genre.name}" binding.pry}
     end
+      
+      
+      # expect($stdout).to receive(:puts).with("1. Thundercat - For Love I Come - dance")
+      # expect($stdout).to receive(:puts).with("2. Real Estate - Green Aisles - country")
+      # expect($stdout).to receive(:puts).with("3. Real Estate - It's Real - hip-hop")
+      # expect($stdout).to receive(:puts).with("4. Action Bronson - Larry Csonka - indie")
+      # expect($stdout).to receive(:puts).with("5. Jurassic 5 - What's Golden - hip-hop")
       
   end 
   
