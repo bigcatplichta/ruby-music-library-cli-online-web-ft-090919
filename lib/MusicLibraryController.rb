@@ -7,11 +7,14 @@ class MusicLibraryController
   end
 
   def call 
-    "Welcome to your music library!"
-    
     input = gets.chomp 
     
-    while input != exit do 
+    "Welcome to your music library!"
+    "To list all of your songs, enter 'list songs'."
+    
+    case
+    when 
+      
       
   end 
 
