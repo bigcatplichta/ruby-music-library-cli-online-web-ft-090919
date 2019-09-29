@@ -72,6 +72,7 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     input = gets.chomp 
     binding.pry
+    find_by_name(input)
     
   end 
   
