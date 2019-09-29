@@ -50,7 +50,7 @@ class MusicLibraryController
       
       song_list.each do 
       #song_list.each.with_index(1) {|song, i|  binding.pry}
-      
+    end
       
   end 
   
