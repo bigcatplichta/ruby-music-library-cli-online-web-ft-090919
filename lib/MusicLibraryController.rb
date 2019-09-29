@@ -1,7 +1,7 @@
 require 'pry'
 
 class MusicLibraryController
-  include Concerns::Findable
+ 
   
   attr_accessor :path, :gets
 
@@ -73,7 +73,7 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     input = gets.chomp 
     
-    artist = find_by_name(input)
+    artist = Artist.all.find { |x| x.name == name }
     binding.pry
   end 
   
