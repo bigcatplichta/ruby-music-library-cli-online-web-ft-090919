@@ -1,3 +1,5 @@
+require_relative 'concerns.rb'
+
 class Song
 extend Concerns::Findable
 
