@@ -1,3 +1,5 @@
+require 'pry'
+
 class MusicLibraryController
 
   attr_accessor :path, :gets
@@ -42,7 +44,9 @@ class MusicLibraryController
     
     
   def list_songs
-      Song.all.each {|song| puts song.name}
+      Song.all.each.with_index(1) {|i, song| puts "#{i+1}. #{song.name}"}
+      
+      binding.pry
   end 
   
   def list_artists
