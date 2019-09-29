@@ -92,7 +92,7 @@ class MusicLibraryController
     
     binding.pry 
     if input.between?(1, (list.count)
-    
+    end
     
     puts"Playing #{list[selection].name} by #{list[selection].artist.name}" 
     
