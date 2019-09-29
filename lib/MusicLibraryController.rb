@@ -93,21 +93,21 @@ class MusicLibraryController
     
     if input.between?(1, (songs.count))
       #binding.pry
-      song = Song.all.sort{ |a, b| a.name <=> b.name }[input - 1]
+      song = Song.all.sort_by{ |song| song.name }[input - 1]
        puts "Playing #{song.name} by #{song.artist.name}" 
     end 
   end 
 end
 
-def play_song
-    puts "Which song number would you like to play?"
+# def play_song
+#     puts "Which song number would you like to play?"
 
-    input = gets.strip.to_i #input is string strip convert top int
-    song_list = Song.all.sort_by{ |song| song.name } #sorts songs alph by name
-      unless input == 0 ##accounts for passed in 0 so does not equal -1
-      if song_list.member?(song_list[input -1])
-        play_song = song_list[input -1]
-        puts "Playing #{play_song.name} by #{play_song.artist.name}"
-        end
-      end
-  end
+#     input = gets.strip.to_i #input is string strip convert top int
+#     song_list = Song.all.sort_by{ |song| song.name } #sorts songs alph by name
+#       unless input == 0 ##accounts for passed in 0 so does not equal -1
+#       if song_list.member?(song_list[input -1])
+#         play_song = song_list[input -1]
+#         puts "Playing #{play_song.name} by #{play_song.artist.name}"
+#         end
+#       end
+#   end
