@@ -1,7 +1,8 @@
 require 'pry'
 
 class MusicLibraryController
-
+  include Concerns::Findable
+  
   attr_accessor :path, :gets
 
   def initialize(path = "./db/mp3s")
