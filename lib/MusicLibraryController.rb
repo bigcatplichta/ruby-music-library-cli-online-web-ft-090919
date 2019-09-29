@@ -95,7 +95,7 @@ class MusicLibraryController
     if selection.between?(0, (list.count))
      puts "Playing #{list[input.to_i].name} by #{list[input.to_i].artist.name}" 
     else 
-      nil 
+      return "test" 
     end 
     
     
