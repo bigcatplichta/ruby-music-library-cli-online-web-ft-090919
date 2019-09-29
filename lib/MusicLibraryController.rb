@@ -35,11 +35,13 @@ class MusicLibraryController
     def list_songs
       if @input = "list songs"
         Song.all
+      end 
     end 
     
     def list_artists
       if @input = "list artists"
         #list artists
+      end
     end 
     
     def list_genres
