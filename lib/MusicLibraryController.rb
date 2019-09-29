@@ -91,6 +91,8 @@ class MusicLibraryController
     input = gets.chomp
     selection = input.to_i-1
     
+    binding.pry
+    
     puts"Playing #{list[selection].song.name} by #{list[selection].artist.name}" 
     
     binding.pry
