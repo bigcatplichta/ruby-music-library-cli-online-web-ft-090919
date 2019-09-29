@@ -58,7 +58,7 @@ class MusicLibraryController
   
   def list_artists
     if @input = "list artists"
-      
+      Artist.all 
     end
   end 
   
