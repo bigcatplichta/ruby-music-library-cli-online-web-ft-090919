@@ -90,7 +90,7 @@ class MusicLibraryController
     
    
     list = list_songs
-    list
+    puts list
     input = gets.chomp
     
     selection = input.to_i-1
