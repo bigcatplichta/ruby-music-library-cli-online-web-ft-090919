@@ -74,7 +74,7 @@ class MusicLibraryController
     input = gets.chomp 
     
     artist = Artist.all.find { |x| x.name == input }
-    artist.songs.each.with_index(1) {|song, i| puts "#{i}. #{song.name} - #{song.genre.name}" binding.pry} 
+    artist.songs.each.with_index(1) {|song, i| puts "#{i}. #{song.name} - #{song.genre.name}"} 
   end 
   
   # expect($stdout).to receive(:puts).with("Please enter the name of an artist:")
