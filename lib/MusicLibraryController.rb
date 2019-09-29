@@ -17,6 +17,7 @@ class MusicLibraryController
     "To list all of the songs of a particular genre, enter 'list genre'."
     "To play a song, enter 'play song'."
     "To quit, type 'exit'."
+    "What would you like to do?"
     
     
     case
