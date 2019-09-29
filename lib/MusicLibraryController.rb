@@ -90,15 +90,10 @@ class MusicLibraryController
     list = Song.all
     input = gets.chomp
     
-    
-    
     if input.between?(1, (list.count))
       binding.pry
       song = Song.all.sort{ |a, b| a.name <=> b.name }[input - 1]
     end
-    
-      puts "Playing #{list[input.to_i].name} by #{list[input.to_i].artist.name}" 
-     
-    
+      puts "Playing #{song.name} by #{song.artist.name}" 
   end 
 end
