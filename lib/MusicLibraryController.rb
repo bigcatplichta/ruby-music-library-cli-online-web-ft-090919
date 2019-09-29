@@ -91,10 +91,10 @@ class MusicLibraryController
     input = gets.chomp
     selection = input.to_i-1
     
-    list[selection].artist.name 
+    puts"Playing #{list[selection].song.name} by #{list[selection].artist.name}" 
     
     binding.pry
     
   end 
-  
+  #"Playing Larry Csonka by Action Bronson"
 end
