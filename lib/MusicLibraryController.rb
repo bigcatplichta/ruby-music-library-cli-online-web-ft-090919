@@ -92,7 +92,7 @@ class MusicLibraryController
     
     
     
-    if selection.between?(0, (list.count))
+    if input.between?(1, (list.count))
       binding.pry
       song = Song.all.sort{ |a, b| a.name <=> b.name }[input - 1]
     end
