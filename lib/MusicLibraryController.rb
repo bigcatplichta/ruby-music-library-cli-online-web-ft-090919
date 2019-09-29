@@ -9,6 +9,8 @@ class MusicLibraryController
   def call 
     @input = gets.chomp 
     
+    while @input != "exit" do 
+    
     "Welcome to your music library!"
     "What would you like to do?"
     "To list all of your songs, enter 'list songs'."
@@ -20,9 +22,8 @@ class MusicLibraryController
     "To quit, type 'exit'."
     
     
-    while @input != "exit" do 
-    "Welcome to your music library!"
-    "What would you like to do?"
+    
+    
       
       case @input 
       when "list songs"
