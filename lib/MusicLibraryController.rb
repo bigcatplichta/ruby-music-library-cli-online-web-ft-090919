@@ -74,7 +74,7 @@ class MusicLibraryController
     input = gets.chomp 
     
     artist = Artist.all.find { |x| x.name == input }
-    binding.pry
+    artist.songs 
   end 
   
   # it "prompts the user to enter an artist" do
