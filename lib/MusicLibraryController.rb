@@ -91,7 +91,7 @@ class MusicLibraryController
     input = gets.chomp
     
     binding.pry 
-    input.between?(1, (list.count)
+    input.between?(1, (list.count))
      
     
     
