@@ -64,11 +64,6 @@ class MusicLibraryController
     genre_list.each.with_index(1) {|genre, i| puts "#{i}. #{genre.name}"}
   end
   
-  # expect($stdout).to receive(:puts).with("1. country")
-  #     expect($stdout).to receive(:puts).with("2. dance")
-  #     expect($stdout).to receive(:puts).with("3. hip-hop")
-  #     expect($stdout).to receive(:puts).with("4. indie")
-  
   def list_songs_by_artist 
     puts "Please enter the name of an artist:"
     input = gets.chomp 
