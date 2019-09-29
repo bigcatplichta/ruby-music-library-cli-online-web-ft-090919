@@ -96,5 +96,6 @@ class MusicLibraryController
       binding.pry
      puts "Playing #{list[input.to_i].name} by #{list[input.to_i].artist.name}" 
     end 
+    
   end 
 end
