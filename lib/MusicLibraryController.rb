@@ -69,13 +69,14 @@ class MusicLibraryController
   #     expect($stdout).to receive(:puts).with("4. indie")
   
   def list_songs_by_artist 
-    
+    puts "Please enter the name of an artist:"
   end 
   
   # it "prompts the user to enter an artist" do
   #     allow(music_library_controller).to receive(:gets).and_return("Testing for #puts")
 
   #     expect($stdout).to receive(:puts).with("Please enter the name of an artist:")
+  
   def list_songs_by_genre 
     
   end 
