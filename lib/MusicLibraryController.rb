@@ -73,7 +73,7 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     input = gets.chomp 
     
-    artist = Artist.all.find { |x| x.name == name }
+    artist = Artist.all.find { |x| x.name == input }
     binding.pry
   end 
   
