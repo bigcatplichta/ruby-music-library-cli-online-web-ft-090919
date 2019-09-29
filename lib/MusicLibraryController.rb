@@ -8,6 +8,11 @@ class MusicLibraryController
 
   def call 
     
+    
+    input = gets.chomp 
+    
+    while input != exit do 
+      
   end 
 
 end
