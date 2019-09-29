@@ -85,7 +85,7 @@ class MusicLibraryController
     input = gets.chomp 
     
     if Genre.all.find { |x| x.name == input }
-      genre = Genre.all.detect { |x| x.name == input }
+      genre = Genre.all.detect {x.name == input }
       list = genre.songs.select {song.genre.name == input}
       list.each.with_index(1) {|song, i| puts "#{i}. #{song.artist.name} - #{song.name}"} 
     end 
