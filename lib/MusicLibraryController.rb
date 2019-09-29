@@ -92,10 +92,6 @@ class MusicLibraryController
     end 
   end 
   
-  # expect($stdout).to receive(:puts).with("Please enter the name of a genre:")
-  #     expect($stdout).to receive(:puts).with("1. Real Estate - It's Real")
-  #     expect($stdout).to receive(:puts).with("2. Jurassic 5 - What's Golden")
-  
   def play_song
     
   end 
