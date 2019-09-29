@@ -45,20 +45,15 @@ class MusicLibraryController
     
     
   def list_songs
-    
       song_list = Song.all.sort_by {|song| song.name}
       song_list.each.with_index(1) {|song, i| puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"}
-  
   end 
   
   def list_artists
-    
       artist_list = Artist.all.sort_by {|artist| artist.name}
       artist_list.each.with_index(1) {|artist, i| puts "#{i}. #{artist.name}"}
-    
   end 
   
-      
   def list_genres
     genre_list = Genre.all.sort_by {|genre| genre.name}
     genre_list.each.with_index(1) {|genre, i| puts "#{i}. #{genre.name}"}
@@ -98,16 +93,3 @@ class MusicLibraryController
     end 
   end 
 end
-
-# def play_song
-#     puts "Which song number would you like to play?"
-
-#     input = gets.strip.to_i #input is string strip convert top int
-#     song_list = Song.all.sort_by{ |song| song.name } #sorts songs alph by name
-#       unless input == 0 ##accounts for passed in 0 so does not equal -1
-#       if song_list.member?(song_list[input -1])
-#         play_song = song_list[input -1]
-#         puts "Playing #{play_song.name} by #{play_song.artist.name}"
-#         end
-#       end
-#   end
