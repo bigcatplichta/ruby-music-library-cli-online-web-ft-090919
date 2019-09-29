@@ -47,9 +47,7 @@ class MusicLibraryController
     
       song_list = Song.all.sort_by {|song| song.name}
       song_list.each.with_index(1) {|song, i| puts "#{i}. #{song.artist.name} - #{song.name} - #{song.genre.name}"}
-    
-      
-      
+  
       # expect($stdout).to receive(:puts).with("1. Thundercat - For Love I Come - dance")
       # expect($stdout).to receive(:puts).with("2. Real Estate - Green Aisles - country")
       # expect($stdout).to receive(:puts).with("3. Real Estate - It's Real - hip-hop")
