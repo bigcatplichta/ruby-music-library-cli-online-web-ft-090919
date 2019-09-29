@@ -50,7 +50,7 @@ class MusicLibraryController
       
      
       song_list.each.with_index(1) {|song, i| puts "#{i}. #{artist.name} - #{song.name} - #{genre.name}" binding.pry}
-    end
+    
       
       
       # expect($stdout).to receive(:puts).with("1. Thundercat - For Love I Come - dance")
