@@ -97,11 +97,6 @@ class MusicLibraryController
     else 
       return "test" 
     end 
-    
-    
     return "test"
-    
-    
   end 
-  #"Playing Larry Csonka by Action Bronson"
 end
