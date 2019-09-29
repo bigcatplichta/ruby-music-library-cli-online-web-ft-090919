@@ -20,8 +20,7 @@ class MusicLibraryController
     "What would you like to do?"
     
     
-    case
-    when 
+    
       
       
   end 
