@@ -87,9 +87,13 @@ class MusicLibraryController
     if Genre.all.find { |x| x.name == input }
       genre = Genre.all.find { |x| x.name == input }
       list = genre.songs.sort_by {|song| song.name}
-      list.each.with_index(1) {|genre, i| puts "#{i}. #{genre.name} - #{genre.name}"} 
+      list.each.with_index(1) {|genre, i| puts "#{i}. #{genre.artist.name} - #{genre.song.name}"} 
     end 
   end 
+  
+  # expect($stdout).to receive(:puts).with("Please enter the name of a genre:")
+  #     expect($stdout).to receive(:puts).with("1. Real Estate - It's Real")
+  #     expect($stdout).to receive(:puts).with("2. Jurassic 5 - What's Golden")
   
   def play_song
     
