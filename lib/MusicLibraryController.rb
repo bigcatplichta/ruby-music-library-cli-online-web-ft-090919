@@ -94,9 +94,6 @@ class MusicLibraryController
     # binding.pry
     if selection.between?(0, (list.count))
      puts "Playing #{list[input.to_i].name} by #{list[input.to_i].artist.name}" 
-    else 
-      return "test" 
-    end 
-      return "test"
+    
   end 
 end
