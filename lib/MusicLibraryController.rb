@@ -90,8 +90,8 @@ class MusicLibraryController
     list = list_songs
     input = gets.chomp
     
-    
-    if input.between?()
+    binding.pry 
+    if input.between?(1, (list.count)
     
     
     puts"Playing #{list[selection].name} by #{list[selection].artist.name}" 
