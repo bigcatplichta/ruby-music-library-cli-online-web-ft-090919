@@ -7,7 +7,7 @@ class MusicLibraryController
   end
 
   def call 
-    input = gets.chomp 
+    @input = gets.chomp 
     
     #"Welcome to your music library!"
     # "To list all of your songs, enter 'list songs'."
@@ -20,7 +20,7 @@ class MusicLibraryController
     # "What would you like to do?"
     
     
-    while input != "exit" do 
+    while @input != "exit" do 
     "Welcome to your music library!"
     "To list all of your songs, enter 'list songs'."
     "To list all of the artists in your library, enter 'list artists'."
@@ -33,11 +33,13 @@ class MusicLibraryController
     end 
     
     def list_songs
-      
+      if @input = "list songs"
+        Song.all
     end 
     
     def list_artists
-      
+      if @input = "list artists"
+        #list artists
     end 
     
     def list_genres
