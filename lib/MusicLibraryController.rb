@@ -9,6 +9,8 @@ class MusicLibraryController
   def call 
     @input = gets.chomp 
     
+    puts "Welcome to your music library!"
+    "What would you like to do?"
     "To list all of your songs, enter 'list songs'."
     "To list all of the artists in your library, enter 'list artists'."
     "To list all of the genres in your library, enter 'list genres'."
